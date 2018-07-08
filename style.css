@@ -20,11 +20,11 @@ body {
   li {
   margin-right: 5px;
   background-color:#d27921;
-  border-right: 1px solid ;
   padding:5px;
+  font-size: 24px;
   }
   h1{
-    font: 56px fantasy;
+    font: 76px fantasy;
   text-align:center;
   color:gold;
   
@@ -35,8 +35,9 @@ body {
     font-weight: 650;
   }
   li:hover {
-    background-color:#eec32d;
+    background-color:#a6340a;
   transition:1s ;
+  padding: 8px;
   }
   
   .server-name {
@@ -45,28 +46,52 @@ body {
     text-align: center;
   }
   .colun {
-   background-color: white;
-   opacity: 0.7;
+    margin-left: 20px;
+      width: 280px;
+      max-height: 500px;
+      min-width: 280px;
+   background-color: #c3c0bd;
+   opacity: 0.8;
    padding: 10px;
    margin: 5px;
    color: black;
   font: bold arial;
+  text-align: justify;
+  overflow: scroll;
+  font-weight: bolder;
   
+
+  }
+  .video-spoller {
+      margin-left: 50px;
+    border: 1px solid gold;
+    padding: 5px;
+    background-color:#c3c0bd;
+    opacity: 0.8;
+    font: bold, arial;
+  }
+  .flex-news {
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: flex-start;
+	align-content: stretch;
+
   }
   h4 {
     text-align: center;
+    font-size: 24px;
+    font-family: fantasy;
   }
-  .video-spoller {
-    border: 1px solid gold;
-    padding: 5px;
-    background-color: white;
-    opacity: 0.87;
-    font: bold, arial;
-  }
+  
   .flex-video {
    padding:5px;
    margin:5px;
    
+  }
+  .calendar {
+
   }
   
   .footer1 {
