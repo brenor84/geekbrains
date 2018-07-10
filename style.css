@@ -3,10 +3,40 @@ body {
   background-attachment: fixed;
   background-position: center;
   background-size:cover;
-  
-  
   }
-  ul {
+  .fullscreen-bg {
+    overflow: hidden;
+    z-index: -100;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    padding-top:45%;
+}
+ 
+.fullscreen-bg__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+ 
+.overlay {
+    background: rgba(0,0,0,0.6);
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+}
+ 
+.overlay h1 {
+    text-align:center;
+    color:#fff;
+    font-size: 70px;
+    margin-top:17%;
+}
+ ul {
    display:flex;
   flex-wrap: no-wrap;
   justify-content: space-around;
@@ -17,59 +47,52 @@ body {
     padding: 10px;
   }
   
-  li {
+li {
   margin-right: 5px;
   background-color:#d27921;
   padding:5px;
   font-size: 24px;
   }
-  h1{
+ h1{
     font: 76px fantasy;
   text-align:center;
   color:gold;
   
   }
-  a {
+a {
     text-decoration:none;
     color:white;
     font-weight: 650;
   }
-  li:hover {
+li:hover {
     background-color:#a6340a;
   transition:1s ;
   padding: 8px;
   }
   
-  .server-name {
+.server-name {
     font: 44px arial;
     color:gold;
     text-align: center;
   }
-  .colun {
+.colun {
     margin-left: 20px;
-      width: 280px;
-      max-height: 500px;
-      min-width: 280px;
+   width: 280px;
+   min-width: 280px;
+   max-height: 550px;
    background-color: #c3c0bd;
    opacity: 0.8;
    padding: 10px;
    margin: 5px;
    color: black;
-  font: bold arial;
-  text-align: justify;
-  overflow: scroll;
-  font-weight: bolder;
+   font: bold arial;
+   text-align: justify;
+   overflow: scroll;
+   font-weight: bolder;
   
 
   }
-  .video-spoller {
-      margin-left: 50px;
-    border: 1px solid gold;
-    padding: 5px;
-    background-color:#c3c0bd;
-    opacity: 0.8;
-    font: bold, arial;
-  }
+ 
   .flex-news {
     display: flex;
 	flex-direction: row;
@@ -84,10 +107,20 @@ body {
     font-size: 24px;
     font-family: fantasy;
   }
-  
+  .video-spoller {
+    margin-left: 50px;
+  border: 1px solid gold;
+  padding: 5px;
+  background-color:#c3c0bd;
+  opacity: 0.90;
+  font: bold, arial;
+}
   .flex-video {
+    width: 1200px;
+    height: 450px;
    padding:5px;
    margin:5px;
+   overflow: scroll;
    
   }
   .calendar {
@@ -97,7 +130,17 @@ body {
   .footer1 {
     padding: 15px;
     margin:10px;
-    
-  
+  }
+  .rules {
+    opacity: 0.8;
+    background-color: #fff;
+    padding: 10px;
+    margin: 20px;
+    text-align: center;
+  }
+  #head-rules {
+    color: goldenrod;
+    font-size: 44px;
+    font-family: fantasy;
   }
   
